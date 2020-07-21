@@ -1,0 +1,73 @@
+{
+   "results" : [
+      {
+        "address_components" : [
+            {
+               "long_name" : "Bagnan Railway Station",
+               "short_name" : "Bagnan Railway Station",
+               "types" : [
+	                  "bus_station",
+	                  "establishment",
+	                  "point_of_interest",
+	                  "transit_station"
+                ]
+            },
+            {
+               "long_name" : "Bagnan",
+               "short_name" : "Bagnan",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Howrah",
+               "short_name" : "Howrah",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "West Bengal",
+               "short_name" : "WB",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "711303",
+               "short_name" : "711303",
+               "types" : [ "postal_code" ]
+            }
+        ],
+        "formatted_address" : "Bagnan Railway Station, Bagnan, West Bengal 711303, India",
+        "geometry" : {
+            "location" : {
+               "lat" : 22.463376,
+               "lng" : 87.972326
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 22.4647249802915,
+                  "lng" : 87.97367498029151
+               },
+               "southwest" : {
+                  "lat" : 22.4620270197085,
+                  "lng" : 87.97097701970849
+               }
+            }
+         },
+         "place_id" : "ChIJD_wOWlWaAjoRUKyTdIH9nwQ",
+         "plus_code" : {
+            "compound_code" : "FX7C+9W Bagnan, West Bengal, India",
+            "global_code" : "7MJ9FX7C+9W"
+         },
+         "types" : [
+            "bus_station",
+            "establishment",
+            "point_of_interest",
+            "transit_station"
+         ]
+      }
+   ],
+   "status" : "OK"
+}

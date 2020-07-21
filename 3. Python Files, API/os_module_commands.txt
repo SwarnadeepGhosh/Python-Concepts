@@ -1,0 +1,32 @@
+Commands of OS module which is used to file manipulation in Python
+>>> import os
+
+>>> os.listdir()                                        # To get the files under working directory
+    ['Photos', 'Desktop', 'my_file.txt']
+
+>>> os.listdir("Photos")                                # To get the files under a sub-directory
+    ['bears.jpg', 'turtle.jpg', 'cat.jpg']
+
+>>> os.mkdir("Documents")                               # To make a directory named 'Documents'
+>>> os.listdir()
+    ['Photos', 'Desktop', 'my_file.txt', 'Documents']
+
+>>> os.rename("my_file.txt", "Documents/my_file.txt")   # To move a file from Working directory to sub-directory 'Documents'
+>>> os.listdir("Documents")
+    ['my_file.txt']
+
+>>> os.getcwd()                                         # Returns the current working directory
+    'C:\\Users\\swarnadeeprocks\\Downloads'
+>>> os.listdir()
+    ['backups', 'workspace']
+
+>>> os.chdir('workspace')                               # Change Working Directory into a subdirectory
+>>> os.listdir()
+    ['lizards.txt']
+
+    Absolute Path : We can use absolute path to list() a directory which is not in our Workspace
+>>> os.listdir('C:\\Users\\swarnadeeprocks\\Pictures')  # Note double backslash !!!!!
+    ['file1.txt', 'file2.pdf']
+
+>>> os.path.join("Documents", "Photos", "Oahu")         # To get the path depending on operating systems. 
+    'Documents\\Photos\\Oahu'
