@@ -20,4 +20,5 @@ def replace_substring(string, substring,replacement):
 
 # Here are some examples you can test it with:
 print(replace_substring('Hot SPAM!drop soup, and curry with SPAM!plant.', 'SPAM!', 'egg'))
+print()
 print(replace_substring("The word 'definately' is definately often misspelled.", 'definately', 'definitely'))
