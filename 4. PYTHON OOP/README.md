@@ -190,3 +190,147 @@ print(harry.salary) #Outputs 88000
 
 ### Inheritance :
 
+Just like other language, we can inherit parent property into child.
+
+```python
+class Mammal:
+    def walk(self):
+        print('walk')
+
+class Dog(Mammal): #Inherit parent class Mammal
+    def bark(self):
+        print('bhow bhow')
+
+class Cat(Mammal):
+    def walk(self):
+        print('i am walking') # We can also overwrite method in parent class
+    def bark(self):
+        print('meaw meaw')
+
+dog = Dog()
+dog.walk()
+dog.bark()
+
+cat = Cat()
+cat.walk()
+cat.bark()
+```
+
+
+
+
+
+
+### Methods
+
+Let create a module name ***weight_converter.py***
+
+```python
+# we will import weight_converter_module.py into modules.py and use it.
+def kgs_to_lbs(weight):
+    return weight * 0.45
+def lbs_to_kgs(weight):
+    return weight / 0.45
+```
+
+We will import this module from ***modulesImport.py*** and use the methods
+
+```python
+# METHOD 1 - import entire module
+import weight_converter_module
+print(weight_converter_module.kgs_to_lbs(70))
+
+# METHOD 2 - import specific method
+from weight_converter_module import lbs_to_kgs
+print(lbs_to_kgs(31.5))
+```
+
+
+
+
+
+### Packages
+In python, packages are simple folder with `__init__.py` file in it.
+
+Just create a folder and create a empty ***`__init__.py`***  in it.
+
+Then create a module in ***util/calculate_shipping.py***
+
+```python
+def calc_shipping():
+    print('Calculate Shipping...')
+```
+
+Then Import the module in a external python file (my case ***modulesImport.py***)
+
+```python
+from utils import calculate_shipping
+print(calculate_shipping.calc_shipping())
+```
+
+
+
+
+
+### Random Module
+
+We can use built in Python modules [here]()
+
+Here I am demonstrating Random Module
+
+```python
+import random
+
+# Random number between 0 to 1
+print(random.random())
+
+# Random integer between specific range
+print(random.randint(10,20))
+
+# Pick random item from list
+students = ['John','Mosh','Ray','Paul','Bob']
+print(random.choice(students))
+```
+
+
+
+Real World Application : Roll a Dice
+
+```python
+import random
+class Dice:
+    def roll(self):
+        first = random.randint(1,6)
+        second = random.randint(1,6)
+        return (first, second)
+
+dice = Dice()
+print(dice.roll())
+```
+
+
+
+#### Working With Directories
+
+Using ***pathlib*** module, we can work with path, files and directories.
+
+```python
+# We can work with Directories using pathlib module in python
+from pathlib import Path
+
+# Check if path exists
+path = Path('3. Python Files, API/Photos')
+print(path.exists()) # Returns boolean value
+
+# Create directory if not exist and delete an existing directory
+path = Path('new_folder')
+print(path.mkdir()) # Create a folder
+print(path.rmdir()) # Delete a folder
+
+# List files from current directory (Just like 'ls' in Unix)
+path = Path()
+for file in path.glob('*.py'):
+    print(file)
+
+```
+
